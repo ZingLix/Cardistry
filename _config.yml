@@ -1,7 +1,7 @@
 ### Site Settings ###
 title               : Cardistry
 description         : >-
-                      ""
+                      "Waltz on the Fingertip"
 baseurl             : ""                   # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 repository          : ZingLix/Cardistry    # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
 #remote_theme        : YoussefRaafatNasry/portfolYOU
@@ -23,12 +23,12 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : ZingLix
-# image             : https://bit.ly/2KCvgVJ
+  image             : /assets/img/cover.webp
 # behance           : your_username
 # dribbble          : your_username
 # email             : username@domain.com
 # facebook          : your_username
-  github            : ZingLix
+  github            : ZingLix/Cardistry
 # gitlab            : your_username
 # instagram         : your_username
 # linkedin          : your_username
@@ -44,15 +44,7 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
-
-
-### Collections ###
-collections:
-  projects:
-    output: true
-    permalink: /projects/:name
-
+permalink: /:title
 
 ### Defaults for collections ###
 defaults:
