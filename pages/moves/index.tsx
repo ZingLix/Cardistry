@@ -35,7 +35,7 @@ const MovePage: NextPage = ({ moves }: any) => {
             >
               <Meta
                 title={item.name}
-                description={item.tags.map((tag: string) => (<Tag color="blue">{tag}</Tag>))}
+                description={item.tags.map((tag: string) => (<Tag color="blue" key={tag}>{tag}</Tag>))}
               ></Meta>
             </Card>
           </List.Item>

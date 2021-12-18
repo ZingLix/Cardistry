@@ -6,15 +6,16 @@ import {
 } from '@ant-design/icons';
 const { Title } = Typography;
 const { Header, Footer, Sider, Content } = Layout;
+import Link from 'next/link'
 
 export default function PageNavbar({ }) {
   return (
     <Header style={{ backgroundColor: "white", boxShadow: "0 -3px 5px gray" }} >
       <Row align="middle" style={{ maxWidth: "1680px", margin: "0 auto" }}>
         <Col span={4} >
-          <a href='/'>
+          <Link href='/'>
             <Title level={2} style={{ marginBottom: "0" }} >Cardistry</Title>
-          </a>
+          </Link>
         </Col>
         <Col span={1} >
           <Divider type="vertical" />

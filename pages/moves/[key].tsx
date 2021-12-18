@@ -39,7 +39,7 @@ const MoveDetailPage: NextPage = ({ move }: any) => {
             <Carousel autoplay>
               {
                 move.img_list.map((item: any) => (
-                  <div >
+                  <div key={item.url}>
                     <Image src={item.url} height={300} />
                   </div>
                 ))
@@ -51,7 +51,7 @@ const MoveDetailPage: NextPage = ({ move }: any) => {
               <Descriptions.Item label="动作名称" span={3}>{move.name}</Descriptions.Item>
               <Descriptions.Item label="发明人" span={3}>{unknownConvert(move.designer)}</Descriptions.Item>
               <Descriptions.Item label="Tags" span={3}>
-                {move.tags.map((item: any) => (<Tag color="blue">{item}</Tag>))}
+                {move.tags.map((item: any) => (<Tag color="blue" key={item}>{item}</Tag>))}
               </Descriptions.Item>
             </Descriptions>
           </Col>
@@ -72,7 +72,7 @@ const MoveDetailPage: NextPage = ({ move }: any) => {
                 >
                   <Meta
                     title={<Title level={4}>{item.author}</Title>}
-                    description={item.tags.map((tag: string) => (<Tag color="blue">{tag}</Tag>))}
+                    description={item.tags.map((tag: string) => (<Tag color="blue" key={tag}>{tag}</Tag>))}
                   ></Meta>
                 </Card>
               </List.Item>

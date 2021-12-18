@@ -40,7 +40,7 @@ const CardDetailPage: NextPage = ({ card }: any) => {
             <Carousel autoplay>
               {
                 card.img_list.map((item: any) => (
-                  <div >
+                  <div key={item.url} >
                     <Image src={item.url} height={300} />
                   </div>
                 ))
@@ -53,7 +53,7 @@ const CardDetailPage: NextPage = ({ card }: any) => {
               <Descriptions.Item label="发明人" span={3}>{unknownConvert(card.designer)}</Descriptions.Item>
               <Descriptions.Item label="印刷厂" span={3}>{unknownConvert(card.printer)}</Descriptions.Item>
               <Descriptions.Item label="Tags" span={3}>
-                {card.tags.map((item: any) => (<Tag color="blue">{item}</Tag>))}
+                {card.tags.map((item: any) => (<Tag color="blue" key={item}>{item}</Tag>))}
               </Descriptions.Item>
             </Descriptions>
           </Col>

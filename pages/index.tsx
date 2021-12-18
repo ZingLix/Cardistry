@@ -12,7 +12,7 @@ const Home: NextPage = () => {
           src="/img/cover.webp"
           style={{ borderRadius: "50%", objectFit: "cover", width: "350px", height: "350px", objectPosition: "center" }}>
         </Image>
-        <Title level={3}>"Waltz on the Fingertip"</Title>
+        <Title level={3}>&quot;Waltz on the Fingertip&quot;</Title>
       </Col>
     </Row>
   )
