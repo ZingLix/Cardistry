@@ -1,0 +1,46 @@
+[
+  {
+    "key": "smoke-and-mirrors-v8",
+    "name": "烟与镜 V8",
+    "cover_img": "/img/cards/SmokeMirrorsV8/1.jpg",
+    "tags": [
+      "烟与镜",
+      "Dan&Dave"
+    ],
+    "designer": "Dan & Dave",
+    "printer": "USPCC",
+    "img_list": [
+      {
+        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+      },
+      {
+        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+      },
+      {
+        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+      }
+    ]
+  },
+  {
+    "key": "smoke-and-mirrors-v8",
+    "name": "烟与镜 V8",
+    "cover_img": "/img/cards/SmokeMirrorsV8/1.jpg",
+    "tags": [
+      "烟与镜",
+      "Dan&Dave"
+    ],
+    "designer": "Dan & Dave",
+    "printer": "USPCC",
+    "img_list": [
+      {
+        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+      },
+      {
+        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+      },
+      {
+        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+      }
+    ]
+  }
+]
