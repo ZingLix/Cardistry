@@ -1,0 +1,64 @@
+[
+  {
+    "key": "spin-doctor",
+    "name": "旋转医生",
+    "cover_img": "/img/moves/SpinDoctor/1.png",
+    "tags": [
+      "展牌"
+    ],
+    "designer": "",
+    "img_list": [
+      {
+        "url": "/img/moves/SpinDoctor/1.png"
+      },
+      {
+        "url": "/img/moves/SpinDoctor/1.png"
+      },
+      {
+        "url": "/img/moves/SpinDoctor/1.png"
+      }
+    ],
+    "tutorial_list": [
+      {
+        "url": "https://www.bilibili.com/video/BV1c7411A7Zi",
+        "author": "一颗咕咕星",
+        "cover": "/img/moves/SpinDoctor/tutorial_1.webp",
+        "tags": [
+          "bilibili",
+          "中文"
+        ]
+      }
+    ]
+  },
+  {
+    "key": "spin-doctor1",
+    "name": "旋转医生",
+    "cover_img": "/img/moves/SpinDoctor/1.png",
+    "tags": [
+      "展牌"
+    ],
+    "designer": "",
+    "img_list": [
+      {
+        "url": "/img/moves/SpinDoctor/1.png"
+      },
+      {
+        "url": "/img/moves/SpinDoctor/1.png"
+      },
+      {
+        "url": "/img/moves/SpinDoctor/1.png"
+      }
+    ],
+    "tutorial_list": [
+      {
+        "url": "https://www.bilibili.com/video/BV1c7411A7Zi",
+        "author": "一颗咕咕星",
+        "cover": "/img/moves/SpinDoctor/tutorial_1.webp",
+        "tags": [
+          "bilibili",
+          "中文"
+        ]
+      }
+    ]
+  }
+]
