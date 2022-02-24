@@ -1,6 +1,7 @@
 import { Layout, Menu, Row, Col } from 'antd';
 import React, { useEffect, useState } from 'react'
 import PageHeader from './navbar'
+import PageFooter from './footer'
 import { NextComponentType } from 'next';
 
 const { Header, Footer, Sider, Content } = Layout;
@@ -18,12 +19,10 @@ export default function PageLayout({ children }: any): any {
   return (<>{isClient &&
     <Layout style={{ height: "100%", backgroundColor: "white" }}>
       <PageHeader ></PageHeader>
-
-
-      <Content style={{ padding: '50px', maxWidth: "1600px", margin: "0 auto", height: "100%" }}>
+      <Content style={{ padding: '50px', maxWidth: "1600px", margin: "0 auto", height: "100%", minHeight: "800px" }}>
         {children}
       </Content>
-      <Footer style={{ backgroundColor: "white" }} />
+      <PageFooter></PageFooter>
     </Layout>
   }</>
   )

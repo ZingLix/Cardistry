@@ -2,7 +2,7 @@
   {
     "key": "smoke-and-mirrors-v8",
     "name": "烟与镜 V8",
-    "cover_img": "/img/cards/SmokeMirrorsV8/1.jpg",
+    "cover_img": "/SmokeMirrorsV8/1.jpg",
     "tags": [
       "烟与镜",
       "Dan&Dave"
@@ -11,35 +11,34 @@
     "printer": "USPCC",
     "img_list": [
       {
-        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+        "url": "/SmokeMirrorsV8/1.jpg"
       },
       {
-        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+        "url": "/SmokeMirrorsV8/1.jpg"
       },
       {
-        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+        "url": "/SmokeMirrorsV8/1.jpg"
       }
     ]
   },
   {
-    "key": "smoke-and-mirrors-v8",
-    "name": "烟与镜 V8",
-    "cover_img": "/img/cards/SmokeMirrorsV8/1.jpg",
+    "key": "touch-origin",
+    "name": "Touch Origin",
+    "cover_img": "/TouchOrigin/ORIGIN.jpg",
     "tags": [
-      "烟与镜",
-      "Dan&Dave"
+      "Touch"
     ],
-    "designer": "Dan & Dave",
-    "printer": "USPCC",
+    "designer": "Touch",
+    "printer": "",
     "img_list": [
       {
-        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+        "url": "/TouchOrigin/ORIGIN-FACE.jpg"
       },
       {
-        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+        "url": "/TouchOrigin/ORIGIN-BACK.jpg"
       },
       {
-        "url": "/img/cards/SmokeMirrorsV8/1.jpg"
+        "url": "/TouchOrigin/ORIGIN-BRICK1.jpg"
       }
     ]
   }

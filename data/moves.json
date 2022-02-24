@@ -2,27 +2,36 @@
   {
     "key": "spin-doctor",
     "name": "旋转医生",
-    "cover_img": "/img/moves/SpinDoctor/1.png",
+    "cover_img": "/SpinDoctor/1.png",
     "tags": [
       "展牌"
     ],
     "designer": "",
     "img_list": [
       {
-        "url": "/img/moves/SpinDoctor/1.png"
+        "url": "/SpinDoctor/1.png"
       },
       {
-        "url": "/img/moves/SpinDoctor/1.png"
+        "url": "/SpinDoctor/1.png"
       },
       {
-        "url": "/img/moves/SpinDoctor/1.png"
+        "url": "/SpinDoctor/1.png"
       }
     ],
     "tutorial_list": [
       {
+        "url": "https://www.bilibili.com/video/BV1HE411v7qq",
+        "author": "我是YOLO",
+        "cover": "/SpinDoctor/yolo.jpg",
+        "tags": [
+          "bilibili",
+          "中文"
+        ]
+      },
+      {
         "url": "https://www.bilibili.com/video/BV1c7411A7Zi",
         "author": "一颗咕咕星",
-        "cover": "/img/moves/SpinDoctor/tutorial_1.webp",
+        "cover": "/SpinDoctor/tutorial_1.webp",
         "tags": [
           "bilibili",
           "中文"
@@ -31,29 +40,23 @@
     ]
   },
   {
-    "key": "spin-doctor1",
-    "name": "旋转医生",
-    "cover_img": "/img/moves/SpinDoctor/1.png",
+    "key": "pandora",
+    "name": "潘多拉",
+    "cover_img": "/Pandora/dd.png",
     "tags": [
       "展牌"
     ],
-    "designer": "",
+    "designer": "Dan & Dave",
     "img_list": [
       {
-        "url": "/img/moves/SpinDoctor/1.png"
-      },
-      {
-        "url": "/img/moves/SpinDoctor/1.png"
-      },
-      {
-        "url": "/img/moves/SpinDoctor/1.png"
+        "url": "/Pandora/dd.png"
       }
     ],
     "tutorial_list": [
       {
-        "url": "https://www.bilibili.com/video/BV1c7411A7Zi",
+        "url": "https://www.bilibili.com/video/BV1QJ411i7eh",
         "author": "一颗咕咕星",
-        "cover": "/img/moves/SpinDoctor/tutorial_1.webp",
+        "cover": "/Pandora/guguxing.jpg",
         "tags": [
           "bilibili",
           "中文"

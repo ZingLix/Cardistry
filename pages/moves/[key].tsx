@@ -57,27 +57,31 @@ const MoveDetailPage: NextPage = ({ move }: any) => {
           </Col>
         </Row>
         <Row style={{ margin: "32px" }}>
-          <Title level={3}>教程</Title>
-          <Divider />
-          <List
-            grid={{ gutter: 16, column: 4 }}
-            dataSource={move.tutorial_list}
-            renderItem={(item: any, index: number) => (
-              <List.Item>
-                <Card
-                  hoverable
-                  cover={<img alt="example" src={item.cover} />}
-                  onClick={() => { window.location.href = item.url }}
-                  style={{ width: "300px" }}
-                >
-                  <Meta
-                    title={<Title level={4}>{item.author}</Title>}
-                    description={item.tags.map((tag: string) => (<Tag color="blue" key={tag}>{tag}</Tag>))}
-                  ></Meta>
-                </Card>
-              </List.Item>
-            )}
-          />
+          <Col span={24}>
+            <Title level={3}>教程</Title>
+            <Divider />
+            <List
+              grid={{
+                gutter: 16, column: 4
+              }}
+              dataSource={move.tutorial_list}
+              renderItem={(item: any, index: number) => (
+                <List.Item>
+                  <Card
+                    hoverable
+                    cover={<img alt="example" src={item.cover} />}
+                    onClick={() => { window.location.href = item.url }}
+                    style={{ width: "300px" }}
+                  >
+                    <Meta
+                      title={<Title level={4}>{item.author}</Title>}
+                      description={item.tags.map((tag: string) => (<Tag color="blue" key={tag}>{tag}</Tag>))}
+                    ></Meta>
+                  </Card>
+                </List.Item>
+              )}
+            />
+          </Col>
         </Row>
       </Col>
     </Row>

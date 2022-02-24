@@ -3,33 +3,35 @@ import Head from 'next/head'
 import { GetStaticProps } from 'next';
 import { Image, Row, Col, Typography, Divider, Descriptions, Card, Tag, Carousel, List } from "antd";
 import CardsList, { CardsType, QueryCards } from '../api/cards';
+import type { AppProps /*, AppContext */ } from 'next/app'
 
 const { Title } = Typography;
 const { Meta } = Card;
 
 export async function getStaticPaths() {
   const cards = CardsList()
-  console.log(cards.map(item => ({ params: { key: item.key } })))
   return {
     paths: cards.map(item => ({ params: { key: item.key } })),
     fallback: false // See the "fallback" section below
   };
 }
 
-export async function getStaticProps(prop: any) {
+export const getStaticProps: GetStaticProps = async (prop) => {
+  if (prop.params === undefined) return { props: {} }
   return {
     props: {
-      card: QueryCards(prop.params.key)
+      card: QueryCards(prop.params.key as string)
     }
   }
 }
 
-const CardDetailPage: NextPage = ({ card }: any) => {
+const CardDetailPage: NextPage = (test: any) => {
   const unknownConvert = (value: string) => {
     if (value == "") return "未知"
     return value
   }
 
+  const { card } = test;
   return (
     <Row >
       <Col span={24} style={{ textAlign: "left" }}>
@@ -66,12 +68,10 @@ const CardDetailPage: NextPage = ({ card }: any) => {
             dataSource={card.img_list}
             renderItem={(item: any, index: number) => (
               <List.Item>
-                <Card
-                  hoverable
-                  cover={<img alt="example" src={item.url} />}
-                  onClick={() => { window.location.href = item.url }}
+                <Image
+                  src={item.url}
                 >
-                </Card>
+                </Image>
               </List.Item>
             )}
           />
