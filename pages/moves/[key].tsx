@@ -4,7 +4,6 @@ import { GetStaticProps } from 'next';
 import { Image, Row, Col, Typography, Divider, Descriptions, Card, Tag, Carousel, List } from "antd";
 import MovesList, { MovesType, QueryMove } from '../api/moves';
 
-
 const { Title } = Typography;
 const { Meta } = Card;
 

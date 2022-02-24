@@ -4,6 +4,7 @@ import { GetStaticProps } from 'next';
 import { Image, Row, Col, Typography, Divider, Descriptions, Card, Tag, Carousel, List } from "antd";
 import CardsList, { CardsType, QueryCards } from '../api/cards';
 import type { AppProps /*, AppContext */ } from 'next/app'
+
 const { Title } = Typography;
 const { Meta } = Card;
 
@@ -29,7 +30,7 @@ const CardDetailPage: NextPage = (test: any) => {
     if (value == "") return "未知"
     return value
   }
-  console.log(test)
+
   const { card } = test;
   return (
     <Row >

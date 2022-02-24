@@ -13,6 +13,7 @@ export type CardsType = {
     url: string
   }[],
 }
+
 const CARD_URL_PREFIX = "/img/cards"
 const dataDirectory = path.join(process.cwd(), 'data')
 const rawList = fs.readFileSync(path.join(dataDirectory, "cards.json"));

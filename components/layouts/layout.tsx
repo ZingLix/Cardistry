@@ -19,8 +19,6 @@ export default function PageLayout({ children }: any): any {
   return (<>{isClient &&
     <Layout style={{ height: "100%", backgroundColor: "white" }}>
       <PageHeader ></PageHeader>
-
-
       <Content style={{ padding: '50px', maxWidth: "1600px", margin: "0 auto", height: "100%", minHeight: "800px" }}>
         {children}
       </Content>

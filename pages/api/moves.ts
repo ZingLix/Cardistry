@@ -30,7 +30,6 @@ moveList.forEach(move => {
   move.tutorial_list.forEach(tutorial => tutorial.cover = MOVE_IMG_URL_PREFIX + tutorial.cover)
 })
 
-
 export default function MovesList(): MovesType[] {
   return moveList
 }
