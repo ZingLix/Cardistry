@@ -13,10 +13,14 @@ export type CardsType = {
     url: string
   }[],
 }
-
+const CARD_URL_PREFIX = "/img/cards"
 const dataDirectory = path.join(process.cwd(), 'data')
 const rawList = fs.readFileSync(path.join(dataDirectory, "cards.json"));
-var cardsList = JSON.parse(rawList);
+var cardsList: CardsType[] = JSON.parse(rawList);
+cardsList.forEach(element => {
+  element.cover_img = CARD_URL_PREFIX + element.cover_img;
+  element.img_list.forEach(item => item.url = CARD_URL_PREFIX + item.url)
+});
 
 export default function CardsList(): CardsType[] {
   return cardsList

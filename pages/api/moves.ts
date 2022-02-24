@@ -20,9 +20,16 @@ export type MovesType = {
 
 }
 
+const MOVE_IMG_URL_PREFIX = "/img/moves"
 const dataDirectory = path.join(process.cwd(), 'data')
 const rawList = fs.readFileSync(path.join(dataDirectory, "moves.json"));
-var moveList = JSON.parse(rawList);
+var moveList: MovesType[] = JSON.parse(rawList);
+moveList.forEach(move => {
+  move.cover_img = MOVE_IMG_URL_PREFIX + move.cover_img;
+  move.img_list.forEach(img => img.url = MOVE_IMG_URL_PREFIX + img.url)
+  move.tutorial_list.forEach(tutorial => tutorial.cover = MOVE_IMG_URL_PREFIX + tutorial.cover)
+})
+
 
 export default function MovesList(): MovesType[] {
   return moveList
